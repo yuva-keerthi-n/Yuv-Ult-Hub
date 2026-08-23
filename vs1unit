@@ -1,0 +1,40 @@
+
+**1a. Define schema abstraction levels?**
+To hide the complexity of how data is stored, a DBMS provides 3 levels of data abstraction:
+- **Physical Level** – lowest level; describes *how* data is actually stored (low-level data structures).
+- **Logical Level** – describes *what* data is stored and the relationships among it; used by Database Administrators.
+- **View Level** – highest level; describes only the part of the database relevant to a particular user, since different users need different views.
+
+**2a. Outline the advantages of DBMS?**
+- Data Independence — abstract view insulates applications from storage details
+- Efficient Data Access — sophisticated storage/retrieval techniques
+- Data Integrity and Security — enforces constraints and access controls
+- Concurrent Access & Crash Recovery — supports multiple users and backup/recovery
+- Reduced Data Redundancy — centralized data minimizes duplication
+
+**3a. Classify the NoSQL databases?**
+NoSQL databases are classified into 4 types:
+1. Key-Value Store (e.g., Redis, DynamoDB)
+2. Document Database (e.g., MongoDB, CouchDB)
+3. Column-Family Store (e.g., Cassandra, HBase)
+4. Graph Database (e.g., Neo4j)
+
+**4a. Define DBMS. What are the goals of DBMS?**
+A DBMS is a collection of interrelated data and a set of programs to access that data — general-purpose software for defining, constructing, and manipulating databases.
+Goals: (1) manage large volumes of information, (2) provide convenient/efficient storage and access, (3) secure data against failure or tampering, (4) allow data to be shared among multiple users.
+
+**5a. Define entity and attributes? Explain derived and composite attributes?**
+- **Entity** — a real-world object distinguishable from all others, with independent existence (e.g., a specific person).
+- **Attribute** — a property describing an entity (e.g., name, emp_id).
+- **Derived attribute** — value calculated from another attribute (e.g., age derived from date_of_birth).
+- **Composite attribute** — can be subdivided into smaller sub-attributes (e.g., address → street, city, pincode).
+
+**6a. Define the columnar database? What are the steps involved in database design?**
+A **columnar database** stores data by column rather than by row, so all values of a column sit together on disk — making aggregate queries (SUM, AVG, COUNT) much faster; used heavily in analytics (e.g., Cassandra, HBase, BigQuery).
+**Steps in database design (6 steps):**
+1. Requirements Analysis
+2. Conceptual Database Design (ER Model)
+3. Logical Database Design (schema)
+4. Schema Refinement
+5. Physical Database Design
+6. Security Design
